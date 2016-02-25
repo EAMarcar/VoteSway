@@ -1,0 +1,105 @@
+---
+title       : Introduction to VoteSway
+subtitle    : Data Products Course Project
+author      : Edmund A Marcarelli
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+```{r library, echo=FALSE}
+
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(googleVis))
+suppressPackageStartupMessages(library(caret))
+suppressPackageStartupMessages(library(randomForest))
+
+```
+
+## What it does
+
+### Have a candidate for political office you want to support?
+
+Find the most effective way to communicate your thoughts to friends and family based on their age, sex and education level.
+
+## VoteSway
+
+*VoteSway* works in two ways. First, it uses data from a [Pew Research survey](http://www.pewinternet.org/2012/11/06/social-media-and-voting/
+) to predict the best way to communicate with someone given the common ways we communicate with each other.
+
+Second, it shows the distribution of those in the sample with matching characteristices so a user can get an idea of how much emphasis to put on a particular method.
+
+--- .class #id 
+
+## How it works
+
+Data from **Pew Research Foundation** provides the basis
+
+Five means of communication were offered:
+
+1. Face-to-Face
+2. Phone call (voice)
+3. Email
+4. Text message
+5. Post to social media
+
+A Random Forest model was use do build an algorythm to predict which method is most effective.
+
+
+<style>
+em {
+  font-style: italic
+}
+</style>
+
+*One big assumption: We assume that if people said they would use this method, it would also be effective on them.*
+
+---
+
+## Some Details
+
+
+The survey identified the preferred communication method by age, sex and education level.
+
+```{r tree, echo=FALSE,fig.width=7, fig.height=4}
+
+## swaymod <- readRDS("c:/Users/Ed/classdocs/Data_Products/shiny_stuff/swaymod.rds")
+
+votez <- read.csv("VoteSway_input.csv", stringsAsFactors=FALSE)
+
+
+votez$outcome <- ifelse(votez$outcome == "A", "Face-to-Face", votez$outcome)
+votez$outcome <- ifelse(votez$outcome == "B", "Phone Call", votez$outcome)
+votez$outcome <- ifelse(votez$outcome == "C", "Email", votez$outcome)
+votez$outcome <- ifelse(votez$outcome == "D", "Text", votez$outcome)
+votez$outcome <- ifelse(votez$outcome == "E", "Social Media Post", votez$outcome)
+votez$sex <- ifelse(votez$sex == "1", "Male", "Female")
+
+
+# ggplot(votez, aes(x=factor(outcome)))+
+#       geom_bar(stat="bin", width=0.7, fill="steelblue")+
+#       ggtitle("Voter Preferred Communication Methods") +
+#             labs(x = "Communication Methods", y = "Count")
+
+
+ggplot(votez, aes(outcome, fill = factor(sex))) + geom_histogram() +
+      labs(x = "Communication Methods", y = "Surveyed Voters") +
+      ggtitle("Voter Preferred Communication Methods") +
+  guides(fill=guide_legend(title="Sex")) +
+       theme(legend.position="right")
+
+```
+
+---
+
+## What it looks like
+
+
+
+
+
