@@ -26,6 +26,8 @@ Find the most effective way to communicate your thoughts to friends and family b
 
 Second, it shows the distribution of those in the sample with matching characteristices so a user can get an idea of how much emphasis to put on a particular method.
 
+*Disclaimer: VoteSway is a project for the Coursera Developing Data Products class. No claims are made as to the validity or accuracy of the information generated.*
+
 --- .class #id 
 
 ## How it works
@@ -40,7 +42,7 @@ Five means of communication were offered to people who answered the survey:
 4. Text message
 5. Post to social media
 
-A Random Forest model was use do build an algorythm to predict which method is most effective.
+A Random Forest model was used do build an algorythm to predict which method is most effective.
 
 
 <style>
@@ -49,7 +51,13 @@ em {
 }
 </style>
 
-*One big assumption: We assume that if people said they would use this method, it would also be effective on them.*
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
+
+__*One big assumption: We assume that if people said they would use this method, it would also be effective on them.*__
 
 ---
 
@@ -60,24 +68,23 @@ The survey identified the preferred communication method by age, sex and educati
 
 ![plot of chunk tree](assets/fig/tree-1.png)
 
-It is not surprising that this distribution varies by age, sex and education level.  VoteSway lets you find the most effective way to communicate given a set of these characteristics.
+It is not surprising that this distribution varies by characteristics.  VoteSway lets you find the most effective way to communicate given the personal profile of an individual.
 
 ---
 
 ## What it looks like
 
-Below is a portion of the VoteSway application. Click [here](https://hydrakos01.shinyapps.io/shiny_stuff/) to start VoteSway
+Below is a portion of the VoteSway application main panel and sidebar panel. 
 
-
+Click [here](https://hydrakos01.shinyapps.io/shiny_stuff/) to start VoteSway
  
 ![alt text][VoteSway]
 
 [VoteSway]: http://hydrakos.com/wp-content/uploads/2016/02/VoteSway.png "VoteSway "
 
+The github repository for VoteSway is here: https://github.com/EAMarcar/VoteSway
 
 
-
-*Disclaimer: VoteSway is a project for the Coursera Developing Data Products class. No claims are made as to the validity or accuracy of the information generated.*
     
 
 

@@ -1,5 +1,6 @@
 # VoteSway
-Data Products class project
+##Data Products class project
+###February 25, 2016
 
 The class project consists of two parts, a shiny application and a slidify presentation.  There is an additional component used in preparation of the application.
 
