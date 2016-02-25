@@ -30,9 +30,9 @@ Second, it shows the distribution of those in the sample with matching character
 
 ## How it works
 
-Data from **Pew Research Foundation** provides the basis
+The **Pew Research Foundation** survey data provides the basis for how VoteSway works.
 
-Five means of communication were offered:
+Five means of communication were offered to people who answered the survey:
 
 1. Face-to-Face
 2. Phone call (voice)
@@ -60,11 +60,25 @@ The survey identified the preferred communication method by age, sex and educati
 
 ![plot of chunk tree](assets/fig/tree-1.png)
 
+It is not surprising that this distribution varies by age, sex and education level.  VoteSway lets you find the most effective way to communicate given a set of these characteristics.
+
 ---
 
 ## What it looks like
 
+Below is a portion of the VoteSway application. Click [here](https://hydrakos01.shinyapps.io/shiny_stuff/) to start VoteSway
 
+
+ 
+![alt text][VoteSway]
+
+[VoteSway]: http://hydrakos.com/wp-content/uploads/2016/02/VoteSway.png "VoteSway "
+
+
+
+
+*Disclaimer: VoteSway is a project for the Coursera Developing Data Products class. No claims are made as to the validity or accuracy of the information generated.*
+    
 
 
 

@@ -80,7 +80,7 @@ sidebarLayout(
 
       sidebarPanel( h4("Directions", align = "center", style = "color:blue"),
        
-    ##        titlePanel("VoteSway Directions"),
+   
 
             
             helpText("VoteSway helps you decide which method is the best way to communicate 
@@ -90,13 +90,15 @@ sidebarLayout(
                       a chart percentage of people in that cohort (+/- 5 yearrs of age) who prefer 
                       that method.  Occaisionally for small cohorts VoteSway's prediction 
                       will vary from the respondents actual choices."),
-      
+            
+            helpText("Data Source"),
       
             helpText("VoteSway uses data from a Pew Research study that sampled 1011 adults.
                      The survey was conducted by Princeton Survey Research Associates International
                      (PSRAI). Interviews were done in English by Princeton Data Source from 
                      November 1 to 4, 2012. The margin of sampling error for the complete
                      set of weighted data is ± 3.6 percentage points."),
+            helpText("Disclaimer"),
             helpText("VoteSway is a project for the Coursera Developing Data Products class.
                      No claims are made as to the validity or accuracy of the information generated.")
     

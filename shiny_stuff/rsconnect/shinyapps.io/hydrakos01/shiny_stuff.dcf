@@ -2,6 +2,6 @@ name: shiny_stuff
 account: hydrakos01
 server: shinyapps.io
 appId: 84058
-bundleId: 375109
+bundleId: 379929
 url: https://hydrakos01.shinyapps.io/shiny_stuff/
-when: 1455756121.33874
+when: 1456364245.85679
