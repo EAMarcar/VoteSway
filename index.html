@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Introduction to VoteSway</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Introduction to VoteSway">
+  <meta name="author" content="Edmund A Marcarelli">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Introduction to VoteSway</h1>
+    <h2>Data Products Course Project</h2>
+    <p>Edmund A Marcarelli<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>What it does</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Have a candidate for political office you want to support?</h3>
+
+<p>Find the most effective way to communicate your thoughts to friends and family based on their age, sex and education level.</p>
+
+<h2>VoteSway</h2>
+
+<p><em>VoteSway</em> works in two ways. First, it uses data from a <a href="http://www.pewinternet.org/2012/11/06/social-media-and-voting/">Pew Research survey</a> to predict the best way to communicate with someone given the common ways we communicate with each other.</p>
+
+<p>Second, it shows the distribution of those in the sample with matching characteristices so a user can get an idea of how much emphasis to put on a particular method.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How it works</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Data from <strong>Pew Research Foundation</strong> provides the basis</p>
+
+<p>Five means of communication were offered:</p>
+
+<ol>
+<li>Face-to-Face</li>
+<li>Phone call (voice)</li>
+<li>Email</li>
+<li>Text message</li>
+<li>Post to social media</li>
+</ol>
+
+<p>A Random Forest model was use do build an algorythm to predict which method is most effective.</p>
+
+<style>
+em {
+  font-style: italic
+}
+</style>
+
+<p><em>One big assumption: We assume that if people said they would use this method, it would also be effective on them.</em></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Some Details</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The survey identified the preferred communication method by age, sex and education level.</p>
+
+<p><img src="assets/fig/tree-1.png" alt="plot of chunk tree"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>What it looks like</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='What it does'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How it works'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Some Details'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='What it looks like'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
