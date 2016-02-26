@@ -68,6 +68,8 @@ The survey identified the preferred communication method by age, sex and educati
 
 ![plot of chunk tree](assets/fig/tree-1.png)
 
+The above chart shows the distribution of the total survey sample across the various communication methods.
+
 It is not surprising that this distribution varies by characteristics.  VoteSway lets you find the most effective way to communicate given the personal profile of an individual.
 
 ---
