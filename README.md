@@ -1,6 +1,6 @@
 # VoteSway
 ##Data Products class project
-###February 25, 2016
+####February 25, 2016
 
 The class project consists of two parts, a shiny application and a slidify presentation.  There is an additional component used in preparation of the application.
 
@@ -8,7 +8,7 @@ The class project consists of two parts, a shiny application and a slidify prese
 
 The shiny app files are located in a sub directory of this repository: shiny_stuff.  The application itself is composed of server.R and ui.R files.
 
-Two other files VoteSway_inout.csv and swaymod.rds are inputs to server.R.  VoteSway_input contains servey data from Pew Research cited below.  swaymod.rds is an R file containing a Random Forest model used by the app.
+Two other files VoteSway_inout.csv and swaymod.rds are inputs to server.R.  VoteSway_input contains survey data from Pew Research cited below.  swaymod.rds is an R file containing a Random Forest model used by the app.
 
 A www file is used for css for the application.
 
@@ -20,7 +20,7 @@ There are various other related files in this directory including another copy o
 
 **Other component and files**
 
-There is another R script file, VoteSway_data_final which reads Pew_2012_social.csv and runs the Random Forest model,  This script writes the VoteSway_input.csv and swaymod.rds files.
+There is another R script file, VoteSway_data_final.  This script reads the Pew_2012_social.csv.  It performs preprocessing on the raw survey data and runs the Random Forest model,  Finally it writes the VoteSway_input.csv and swaymod.rds files.
 
 The Pew Research survey information is located here: http://www.pewinternet.org/2012/11/06/social-media-and-voting/
 

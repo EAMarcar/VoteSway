@@ -24,7 +24,7 @@ Find the most effective way to communicate your thoughts to friends and family b
 *VoteSway* works in two ways. First, it uses data from a [Pew Research survey](http://www.pewinternet.org/2012/11/06/social-media-and-voting/
 ) to predict the best way to communicate with someone given the common ways we communicate with each other.
 
-Second, it shows the distribution of those in the sample with matching characteristices so a user can get an idea of how much emphasis to put on a particular method.
+Second, it shows the distribution of those in the sample with matching characteristics so a user can get an idea of how much emphasis to put on a particular method.
 
 *Disclaimer: VoteSway is a project for the Coursera Developing Data Products class. No claims are made as to the validity or accuracy of the information generated.*
 
@@ -42,7 +42,7 @@ Five means of communication were offered to people who answered the survey:
 4. Text message
 5. Post to social media
 
-A Random Forest model was used do build an algorythm to predict which method is most effective.
+A Random Forest model was used to build an algorithm to predict which method is most effective.
 
 
 <style>
